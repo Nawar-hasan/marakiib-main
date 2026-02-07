@@ -1,0 +1,449 @@
+{
+  "@@locale": "ar",
+  "@carDetails": {
+    "description": "Title for car details screen"
+  },
+  "@carInfo": {
+    "description": "Label for car information section"
+  },
+  "@carsAllowed": {
+    "placeholders": {
+      "maxCars": {
+        "type": "Object"
+      }
+    }
+  },
+  "@error": {
+    "description": "Generic error message"
+  },
+  "@features": {
+    "description": "Label for car features section"
+  },
+  "@fewDays": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@imageGallery": {
+    "description": "Label for image gallery"
+  },
+  "@jodPerDays": {
+    "placeholders": {
+      "price": {
+        "type": "Object"
+      },
+      "duration": {
+        "type": "Object"
+      }
+    }
+  },
+  "@loading": {
+    "description": "Loading message"
+  },
+  "@manyDays": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "@noReviewsYet": {
+    "description": "Message shown when there are no reviews for a car"
+  },
+  "@planDetails": {
+    "description": "Shows plan name and daily price",
+    "placeholders": {
+      "planName": {
+        "type": "Object"
+      },
+      "dailyPrice": {
+        "type": "Object"
+      }
+    }
+  },
+  "@reviews": {
+    "description": "Label for reviews section"
+  },
+  "@vendorDetails": {
+    "description": "Label for vendor details section"
+  },
+  "aboutUs": "من نحن",
+  "acceptTerms": "أوافق على الشروط والأحكام",
+  "active": "نشطة",
+  "additionalFees": "رسوم إضافية",
+  "additionalInfo": "معلومات إضافية",
+  "additionalInformation": "معلومات إضافية",
+  "addressError": "من فضلك أدخل عنوانك",
+  "addressFetchError": "خطأ أثناء جلب العنوان",
+  "addressHint": "العنوان",
+  "addressNotFound": "العنوان غير موجود",
+  "adminNotes": "ملاحظات الإدارة",
+  "alerts": "تنبيهات",
+  "amount": "المبلغ",
+  "availability": "التوفر",
+  "availabilityEndHint": "نهاية التوفر",
+  "availabilityPeriod": "فترة التوفر",
+  "availabilityStartHint": "بداية التوفر",
+  "available": "متاحة",
+  "availableBalance": "الرصيد المتاح",
+  "availableFor": "متاح لمدة",
+  "backToHome": "العودة إلى الرئيسية",
+  "basePrice": "السعر الأساسي",
+  "basicCarInfo": "معلومات السيارة الأساسية",
+  "basicCarInformation": "معلومات السيارة الأساسية",
+  "bestPlatformCarRental": "أفضل منصة لتأجير السيارات",
+  "booking": "الحجز",
+  "bookingAddedSuccess": "تم إضافة الحجز بنجاح ✅",
+  "bookingConfirmed": "تم تأكيد الحجز ✅",
+  "bookingDetails": "تفاصيل الحجز",
+  "bookingError": "خطأ: {error}",
+  "bookingFailed": "حدث خطأ، حاول مرة أخرى ❌",
+  "bookingRejected": "تم رفض الحجز ❌",
+  "cancel": "إلغاء",
+  "cancelBooking": "إلغاء الحجز",
+  "cancelButton": "إلغاء",
+  "cancelled": "ملغى",
+  "car": "السيارة",
+  "carAvailabilityStatus": "حالة توفر السيارة",
+  "carCondition": "حالة السيارة",
+  "carConditionAvailable": "متوفرة",
+  "carConditionReserved": "محجوزة",
+  "carDeletedSuccessfully": "تم حذف السيارة بنجاح",
+  "carDetails": "تفاصيل السيارة",
+  "carFeatures": "مميزات السيارة",
+  "carInfo": "معلومات السيارة",
+  "carLicenseExpiryDate": "تاريخ انتهاء رخصة السيارة",
+  "carModelOrRegistration": "طراز السيارة/رقم التسجيل",
+  "carModelRegistrationHint": "موديل السيارة",
+  "carName": "اسم السيارة",
+  "carNameHint": "نوع السيارة/ والفئة",
+  "carNotesHint": "أدخل قدرة السيارة، المتانة إلخ...",
+  "carRentalEaseInfo": "سهولة تأجير السيارات بأمان وموثوقية، وبسعر منخفض بالطبع.",
+  "carStatusAndOptions": "حالة السيارة والخيارات",
+  "carStatusOptions": "حالة السيارة والخيارات",
+  "carUpdatedSuccessfully": "تم تحديث السيارة بنجاح",
+  "carfeatures": "مميزات السيارة",
+  "cars": "سيارات",
+  "carsAllowed": "{maxCars} سيارات مسموحة",
+  "carsAvailable": "السيارات المتاحة",
+  "categorySelection": "اختيار الفئة",
+  "changeProfilePicture": "تغيير صورة الملف الشخصي",
+  "chats": "الدردشات",
+  "checkEmailTitle": "تحقق من بريدك الإلكتروني",
+  "chooseAccountType": "ما نوع الحساب الذي ترغب في إنشائه؟",
+  "chooseMethod": "اختر الطريقة",
+  "choosePlan": "اختر الخطة",
+  "chooseVerificationMethod": "اختر طريقة التحقق",
+  "commercial": "تجارية",
+  "commercialRegError": "من فضلك أدخل رقم السجل التجاري",
+  "commercialRegHint": "رقم السجل التجاري",
+  "commission": "العمولة",
+  "commissionAmount": "العمولة",
+  "completed": "مكتمل",
+  "confirm": "تأكيد",
+  "confirmBooking": "تأكيد الحجز",
+  "confirmFailed": "فشل تأكيد الحجز ❌",
+  "confirmPasswordError": "كلمتا المرور غير متطابقتين",
+  "confirmPasswordHint": "تأكيد كلمة المرور",
+  "confirmPasswordRequired": "من فضلك أكد كلمة المرور",
+  "confirmation": "التأكيد",
+  "confirmed": "مؤكد",
+  "congratulations": "تهانينا",
+  "congratulationsTitle": "تهانينا",
+  "continueButton": "متابعة",
+  "createPayment": "إنشاء الدفع",
+  "createPaymentSession": "إنشاء جلسة دفع",
+  "currency": "دينار",
+  "currentCars": "السيارات الحالية",
+  "dailyPrice": "السعر اليومي",
+  "day": "يوم",
+  "days": "أيام",
+  "days_count": "عدد الأيام",
+  "deals": "الصفقات",
+  "deleteCar": "حذف السيارة",
+  "deleteCarConfirmation": "هل أنت متأكد من حذف هذه السيارة؟",
+  "deposit": "إيداع",
+  "description": "الوصف",
+  "descriptionHint": "الوصف",
+  "descriptions": "الأوصاف",
+  "details": "التفاصيل",
+  "distanceKm": "{value} كم",
+  "drivingLicenseError": "من فضلك اختر صورة رخصة القيادة",
+  "drivingLicensePrompt": "اضغط لاختيار صورة رخصة القيادة",
+  "duration": "المدة",
+  "eWallet": "المحفظة الإلكترونية",
+  "easeOfCarRentalSafely": "سهولة استئجار سيارة بأمان\n وثقة. وبالطبع بسعر منخفض.",
+  "editCar": "تعديل السيارة",
+  "editCarTitle": "تعديل السيارة",
+  "editNow": "تعديل الآن",
+  "editProfile": "تعديل الملف الشخصي",
+  "email": "البريد الإلكتروني",
+  "emailErrorEmpty": "من فضلك أدخل بريدك الإلكتروني",
+  "emailErrorInvalid": "بريد إلكتروني غير صالح",
+  "emailHint": "البريد الإلكتروني",
+  "emailHint1": "البريد الإلكتروني او رقم الهاتف",
+  "emailInvalid": "من فضلك أدخل بريدًا إلكترونيًا صحيحًا",
+  "emailRequired": "من فضلك أدخل البريد الإلكتروني",
+  "endDate": "تاريخ الانتهاء",
+  "endDateCannotBeBeforeStartDate": "تاريخ النهاية لا يمكن أن يكون قبل تاريخ البداية",
+  "enterAmount": "ادخل المبلغ",
+  "enterMaxPrice": "أدخل الحد الأقصى للسعر",
+  "enterMinPrice": "أدخل الحد الأدنى للسعر",
+  "enterNameValidation": "يرجى إدخال الاسم",
+  "enterValidAmount": "❌ ادخل مبلغ صحيح",
+  "enterYourEmail": "أدخل بريدك الإلكتروني",
+  "enter_days_hint": "اكتب عدد الأيام المطلوبة",
+  "error": "خطأ",
+  "errorCarFeatures": "يرجى اختيار ميزات السيارة",
+  "errorInsufficientBalance": "لا يوجد رصيد كافي يرجي الشحن",
+  "errorMainImage": "يرجى اختيار صورة رئيسية صالحة",
+  "errorNoValidExtraImages": "لم يتم اختيار صور إضافية صالحة",
+  "errorPreparingFormData": "خطأ في تحضير بيانات النموذج: {error}",
+  "errorTermsNotAccepted": "يجب قبول الشروط للمتابعة",
+  "exitAppQuestion": "هل تريد الخروج من التطبيق",
+  "extraImages": "صور إضافية",
+  "favorite": "المفضلة",
+  "favoriteCars": "السيارات المفضلة",
+  "favouritesError": "خطأ: {error}",
+  "features": "المميزات",
+  "female": "أنثى",
+  "fewDays": "{count} أيام",
+  "financedCar": "سيارة ممولة",
+  "financedCars": "السيارات الممولة",
+  "financingDuration": "مدة التمويل",
+  "fixed": "ثابت",
+  "forgetPasswordMessage": "من فضلك أدخل بريدك الإلكتروني او رقم الهاتف لإعادة تعيين كلمة المرور",
+  "forgetPasswordTitle": "نسيت كلمة المرور",
+  "forgotPassword": "هل نسيت كلمة المرور؟",
+  "from": "من",
+  "fullName": "الاسم الكامل",
+  "funder": "ممول",
+  "gender": "الجنس",
+  "general": "عام",
+  "government": "حكومية",
+  "helpSupport": "المساعدة والدعم",
+  "home": "الرئيسية",
+  "hour": "ساعة",
+  "imageGallery": "معرض الصور",
+  "imageSelected": "تم اختيار الصورة ✅",
+  "inactive": "غير نشطة",
+  "insuranceTypeComprehensive": "شامل",
+  "insuranceTypeFullCoverage": "تغطية كاملة",
+  "insuranceTypeHint": "نوع التأمين",
+  "insuranceTypeThirdParty": "طرف ثالث",
+  "invalidEmail": "بريد غير صالح",
+  "invalidEmailValidation": "بريد إلكتروني غير صالح",
+  "invalidNumber": "رقم غير صحيح",
+  "invalidPhoneValidation": "رقم هاتف غير صالح",
+  "invoiceDetails": "تفاصيل الفاتورة",
+  "isCarActiveQ": "هل السيارة نشطة؟",
+  "isCarActiveQuestion": "هل السيارة متوفره؟",
+  "jodPerDays": "{price} JOD / {duration} يوم",
+  "languages": "اللغات",
+  "licensePhoto": "صورة الرخصة",
+  "loading": "جاري التحميل...",
+  "loadingAddress": "جارٍ تحميل العنوان...",
+  "location": "الموقع",
+  "logOut": "تسجيل الخروج",
+  "loginSubtitle": "سجّل الآن واستمتع بسهولة الإيجار كما لم يحدث من قبل.",
+  "loginTitle": "تسجيل الدخول",
+  "logoutButton": "تسجيل الخروج",
+  "logoutDialogContent": "بتسجيل الخروج",
+  "logoutDialogTitle": "هل أنت متأكد من تسجيل الخروج؟",
+  "longTermGuarantee": "متاح للضمان طويل المدى (ضمان)؟",
+  "longTermGuaranteeQ": "هل السيارة متاحة للضمان طويل المدى (ضمان)؟",
+  "longTermGuaranteeQuestion": "هل السيارة متاحة للضمان طويل الأمد (ضمان)؟",
+  "mainImage": "الصورة الرئيسية",
+  "male": "ذكر",
+  "manyDays": "{count} يوماً",
+  "maxCars": "الحد الأقصى للسيارات",
+  "maxPrice": "السعر الأقصى",
+  "messageHint": "اكتب رسالتك هنا",
+  "messageLabel": "الرسالة",
+  "messageValidation": "يرجى إدخال الرسالة",
+  "minPrice": "السعر الأدنى",
+  "monthly": "شهري",
+  "monthlySubscription": "الاشتراك الشهري",
+  "mustAcceptTerms": "يجب عليك قبول الشروط للمتابعة",
+  "myBookings": "حجوزاتي",
+  "myFinancings": "تمويلاتي",
+  "mySubscription": "اشتراكاتي",
+  "myWallet": "محفظتي",
+  "nameError": "من فضلك أدخل اسمك",
+  "nameHint": "الاسم",
+  "nameLabel": "الاسم",
+  "nearestToMyLocation": "الأقرب لموقعي",
+  "newPasswordHint": "كلمة المرور الجديدة",
+  "newPasswordRequired": "من فضلك أدخل كلمة مرور جديدة",
+  "no": "لا",
+  "noAccount": "هل لديك حساب؟",
+  "noActiveSubscription": "🚫 لا يوجد اشتراك فعال",
+  "noBookingsFound": "لا توجد حجوزات",
+  "noCarsAvailable": "لا توجد سيارات متاحة.",
+  "noCarsFound": "لم يتم العثور على سيارات",
+  "noData": "لا توجد بيانات",
+  "noFavouritesFound": "لا توجد مفضلات",
+  "noFeaturesSelected": "لم يتم اختيار ميزات - انقر للاختيار",
+  "noFinancedCarsAvailable": "لا توجد عربيات ممولة متاحة",
+  "noFinancingsFound": "لا توجد تمويلات",
+  "noHistory": "لا يوجد معاملات",
+  "noMessagesYet": "لا توجد رسائل بعد",
+  "noNotifications": "لا يوجد لديك اشعارات",
+  "noRecommendedCarsAvailable": "لا توجد سيارات موصى بها.",
+  "noResults": "لا توجد نتائج 😢",
+  "noReviewsYet": "لا توجد تقييمات بعد",
+  "notAvailable": "غير متاح حالياً",
+  "notification": "الإشعارات",
+  "numberOfDays": "عدد الايام",
+  "oneDay": "يوم واحد",
+  "orSignInWith": "أو سجل الدخول بواسطة",
+  "otpDescription": "أرسلنا لك رمزًا، من فضلك أدخل الرمز المكوّن من 6 أرقام.",
+  "otpErrorIncomplete": "أدخل رمز التحقق المكون من 6 أرقام بالكامل",
+  "otpInvalid": "أدخل رمز التحقق المكون من 6 أرقام كاملًا",
+  "otpMessage": "أرسلنا رمزًا إلى {email}، من فضلك أدخل الرمز المكون من 6 أرقام من بريدك الإلكتروني.",
+  "otpResendAction": "إعادة إرسال الرمز",
+  "otpResendPrompt": "لم يصلك الرمز؟",
+  "otpTitle": "تحقق من رمز التحقق المرسل إليك",
+  "owner": "المالك",
+  "passwordErrorEmpty": "من فضلك أدخل كلمة المرور",
+  "passwordErrorShort": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+  "passwordHint": "كلمة المرور",
+  "passwordRequired": "من فضلك أدخل كلمة المرور",
+  "passwordTooShort": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+  "passwordsNotMatch": "كلمتا المرور غير متطابقتين",
+  "paymentMethods": "طرق الدفع",
+  "paymentSessionCreated": "✔ تم إنشاء جلسة الدفع بنجاح",
+  "pending": "قيد الانتظار",
+  "percentage": "نسبة مئوية",
+  "phoneError": "من فضلك أدخل رقم الهاتف",
+  "phoneHint": "رقم الهاتف",
+  "phoneNumber": "رقم الهاتف",
+  "pickupAndDelivery": "الاستلام والتسليم",
+  "pickupDelivery": "التوصيل والاستلام متاح؟",
+  "pickupDeliveryPriceHint": "سعر الاستلام والتسليم (دينار)",
+  "pickupDeliveryQ": "هل توفر خدمة الاستلام والتوصيل؟",
+  "pickupDeliveryQuestion": "هل تقدم خدمة الاستلام والتسليم؟",
+  "planDetails": "الخطة: {planName}\nالسعر اليومي: {dailyPrice} دينار",
+  "planName": "اسم الخطة",
+  "plateType": "نوع اللوحة",
+  "plateTypeCommercial": "بيضاء",
+  "plateTypeGovernment": "حكومي",
+  "plateTypeHint": "نوع اللوحة",
+  "plateTypePrivate": "خضراء",
+  "pleaseAddRatingAndReview": "يرجى إضافة التقييم والتعليق",
+  "pleaseEnterName": "برجاء إدخال الاسم",
+  "pleaseSelectBookingDates": "يرجى اختيار تواريخ الحجز",
+  "popularCar": "اشهر السيارات",
+  "popularCarError": "خطأ: {message}",
+  "previous": "السابقة",
+  "previousRent": "الإيجارات السابقة",
+  "price": "السعر",
+  "pricePerDay": "أدخل السعر لليوم الواحد",
+  "pricePerDayHint": "أدخل السعر اليومي",
+  "pricingInfo": "معلومات التسعير",
+  "pricingInformation": "معلومات التسعير",
+  "privacyPolicy": "سياسة الخصوصية",
+  "private": "خاصة",
+  "privateRenter": "مؤجر خاص",
+  "profile": "حسابي  ",
+  "recommendationCars": "سيارات موصى بها",
+  "recommendedCarError": "خطأ: {message}",
+  "reject": "رفض",
+  "rejectFailed": "فشل رفض الحجز ❌",
+  "rejected": "مرفوض",
+  "rentNow": "استأجر الآن",
+  "rentalDateTime": "تاريخ ووقت الإيجار",
+  "rentalOffice": "مكتب تأجير",
+  "renter": "المستأجر",
+  "requiredField": "هذا الحقل مطلوب",
+  "resendCode": "إعادة إرسال الرمز",
+  "resendPrompt": "لم تستلم الرمز؟ ",
+  "reserved": "محجوزة",
+  "resetPasswordBtn": "إعادة تعيين كلمة المرور",
+  "reviews": "التقييمات ({count})",
+  "saveEdit": "حفظ التعديلات",
+  "search": "بحث",
+  "searchFilter": "فلتر البحث",
+  "searchForCar": "ابحث عن سيارة",
+  "searchKeyword": "كلمة البحث",
+  "searchOrSelectFilter": "ابحث أو اختر فلتر أولاً",
+  "searchResults": "نتائج البحث",
+  "searchSomethingHere": "ابحث عن شيء هنا",
+  "selectCarFeatures": "اختر ميزات السيارة",
+  "selectCategoryHint": "اختر الفئة",
+  "selectEndDate": "اختر تاريخ النهاية",
+  "selectExpiryDate": "من فضلك اختر تاريخ الانتهاء",
+  "selectStartDate": "اختر تاريخ البداية",
+  "selectedFeatures": "الميزات المختارة:",
+  "send": "إرسال",
+  "sendReview": "إرسال التقييم",
+  "send_financing_request": "إرسال طلب التمويل",
+  "sending": "جاري الإرسال...",
+  "setNewPasswordMessage": "قم بإنشاء كلمة مرور جديدة. تأكد أن تكون مختلفة عن السابقة لزيادة الأمان",
+  "setNewPasswordTitle": "تعيين كلمة مرور جديدة",
+  "shareYourOpinion": "يرجى مشاركة رأيك\nحول المنتج",
+  "signInBtn": "تسجيل الدخول",
+  "signUp": "إنشاء حساب",
+  "signUpBtn": "تسجيل",
+  "signUpDescription": "سجّل الآن وتمتع بسهولة التأجير كما لم يحدث من قبل.",
+  "signUpTitle": "إنشاء حساب",
+  "sms": "SMS",
+  "sponsored": "تمويل",
+  "startDate": "تاريخ البداية",
+  "status": "الحالة",
+  "subjectHint": "اكتب الموضوع",
+  "subjectLabel": "الموضوع",
+  "subjectValidation": "يرجى كتابة الموضوع",
+  "submitButton": "إرسال",
+  "subscribeNow": "اشترك الان",
+  "subscriptionInfo": "يجب عليك الاشتراك لتتمكن من الوصول إلى جميع الميزات والبدء في استخدام التطبيق.",
+  "subscriptionPlan": "خطة الاشتراك",
+  "subscriptionPrice": "قيمة الاشتراك",
+  "subscriptionTitle": "خطط الاشتراك",
+  "subtotal": "المجموع الجزئي",
+  "termsAndSubmit": "الشروط والإرسال",
+  "to": "إلى",
+  "today": "اليوم",
+  "topUpFirst": "اشحن اولا",
+  "total": "الاجمالي",
+  "totalPrice": "الإجمالي",
+  "touristOffice": "مكتب سياحي",
+  "tryAdjustingSearchOrFilters": "حاول تعديل البحث أو الفلاتر",
+  "twoDays": "يومان",
+  "typeMessage": "اكتب رسالة...",
+  "unavailable": "غير متاح",
+  "updateCar": "تحديث السيارة",
+  "updatePasswordBtn": "تحديث كلمة المرور",
+  "updating": "جاري التحديث...",
+  "uploadCarImages": "ارفع صور السيارة",
+  "uploadCarTitle": "رفع السيارة",
+  "uploadDrivingLicens": "صورة الهوية الشخصية ",
+  "uploadDrivingLicense": "رفع رخصة المكتب ",
+  "uploadNow": "ارفع الآن",
+  "uploading": "جارٍ الرفع...",
+  "usageTypeBusiness": "أعمال",
+  "usageTypeCommercial": "تجاري",
+  "usageTypeFamily": "عائلي",
+  "usageTypeHint": "طبيعة الاستخدام",
+  "usageTypePersonal": "شخصي",
+  "userBtn": "مستخدم",
+  "vendorBtn": "مؤجر",
+  "vendorDetails": "تفاصيل المورد",
+  "verifyCodeBtn": "تأكيد الرمز",
+  "verifyOtpBtn": "تحقق من الرمز",
+  "viewAll": "عرض الكل",
+  "walletHistory": "تاريخ المحفظة",
+  "weekly": "أسبوعي",
+  "whatIsYourRate": "ما تقييمك؟",
+  "withdrawFailure": "فشل السحب",
+  "withdrawSuccess": "تم السحب بنجاح",
+  "withdrawal": "سحب",
+  "withdrawalPageTitle": "طرق السحب",
+  "writeASubject": "اكتب الموضوع",
+  "writeReview": "اكتب تقييم",
+  "yes": "نعم",
+  "yourLocation": "موقعك",
+  "yourReview": "تقييمك"
+}

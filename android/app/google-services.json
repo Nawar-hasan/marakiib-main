@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "291544370913",
+    "project_id": "marakiib",
+    "storage_bucket": "marakiib.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291544370913:android:e4d0e7a56ec549bef7b1a0",
+        "android_client_info": {
+          "package_name": "com.marakiib"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLeFX5dc9G80z-UAu7Uwn-_dS2Q67kcyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
