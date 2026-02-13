@@ -26,6 +26,9 @@ jobs:
         with:
           flutter-version: '3.38'
 
+      - name: Run Flutter pub get
+        run: flutter pub get  
+
       - name: Decode AuthKey
         run: |
           echo "${{ secrets.ASC_KEY_BASE64 }}" | base64 --decode > AuthKey.p8
