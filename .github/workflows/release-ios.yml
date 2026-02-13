@@ -43,12 +43,24 @@ jobs:
         env:
           P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
         run: |
+          # Create and setup keychain
           security create-keychain -p "" build.keychain
           security default-keychain -s build.keychain
           security unlock-keychain -p "" build.keychain
-          security import ios_distribution.p12 -k build.keychain -P "$P12_PASSWORD" -T /usr/bin/codesign
-          security set-key-partition-list -S apple-tool,apple: -k "" build.keychain
-
+          
+          # Import with explicit password handling
+          security import ios_distribution.p12 \
+            -k build.keychain \
+            -P "$P12_PASSWORD" \
+            -T /usr/bin/codesign \
+            -T /usr/bin/security
+          
+          security set-key-partition-list \
+            -S apple-tool,apple: \
+            -k "" build.keychain
+          
+          echo "✅ Certificate imported successfully"
+          
       - name: Install CocoaPods (if Podfile present)
         run: |
           if [ -f ios/Podfile ]; then
