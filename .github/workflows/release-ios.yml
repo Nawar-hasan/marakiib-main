@@ -38,7 +38,16 @@ jobs:
       - name: Decode P12
         run: |
           echo "${{ secrets.P12_BASE64 }}" | base64 --decode > ios_distribution.p12
-          # import into keychain if needed by fastlane (fastlane/openssl can handle it)
+
+      - name: Import Certificate into Keychain
+        env:
+          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
+        run: |
+          security create-keychain -p "" build.keychain
+          security default-keychain -s build.keychain
+          security unlock-keychain -p "" build.keychain
+          security import ios_distribution.p12 -k build.keychain -P "$P12_PASSWORD" -T /usr/bin/codesign
+          security set-key-partition-list -S apple-tool,apple: -k "" build.keychain
 
       - name: Install CocoaPods (if Podfile present)
         run: |
