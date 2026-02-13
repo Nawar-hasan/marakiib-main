@@ -28,6 +28,17 @@ jobs:
 
       - name: Run Flutter pub get
         run: flutter pub get  
+      - name: Validate Secrets
+        run: |
+          if [ -z "${{ secrets.ASC_KEY_BASE64 }}" ]; then
+          echo "❌ خطأ: ASC_KEY_BASE64 لم يتم تعريفه!"
+          exit 1
+          fi
+           if [ -z "${{ secrets.P12_BASE64 }}" ]; then
+          echo "❌ خطأ: P12_BASE64 لم يتم تعريفه!"
+           exit 1
+           fi
+            echo "✅ جميع الأسرار موجودة"
 
       - name: Decode AuthKey
         run: |
