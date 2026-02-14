@@ -49,7 +49,45 @@ jobs:
       - name: Decode P12
         run: |
           echo "${{ secrets.P12_BASE64 }}" | base64 --decode > ios_distribution.p12
+      - name: Diagnostic: inspect decoded P12 on runner
+        env:
+          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
+        run: |
+          set -e
+          echo ">>> listing current dir"
+          ls -la
+          echo ">>> decoded file size (bytes):"
+          # macOS stat
+          stat -f%z ios_distribution.p12 || wc -c ios_distribution.p12 || true
+          echo ">>> sha256 of decoded file:"
+          shasum -a 256 ios_distribution.p12 || true
+          echo ">>> file command:"
+          file ios_distribution.p12 || true
+          echo ">>> head of base64 secret (first 20 chars):"
+          echo "${{ secrets.P12_BASE64 }}" | head -c 20 || true
+          echo ">>> try openssl to read p12 (no private keys):"
+          # try to read certs only to check integrity; use env password
+          openssl pkcs12 -info -in ios_distribution.p12 -passin env:P12_PASSWORD -nokeys -clcerts || true
 
+      - name: Create temp keychain and try import (detailed)
+        env:
+          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
+          KEYCHAIN_PASS: ${{ secrets.KEYCHAIN_PASS }}
+        run: |
+          set -e
+          KEYCHAIN="ci_test.keychain"
+          echo ">>> creating temporary keychain: $KEYCHAIN"
+          # remove if exists
+          security delete-keychain "$KEYCHAIN" 2>/dev/null || true
+          security create-keychain -p "$KEYCHAIN_PASS" "$KEYCHAIN"
+          security list-keychains -s "$KEYCHAIN"
+          security unlock-keychain -p "$KEYCHAIN_PASS" "$KEYCHAIN"
+          echo ">>> try import p12 into temp keychain (this may fail with wrong pass)"
+          security import ios_distribution.p12 -k "$KEYCHAIN" -P "$P12_PASSWORD" -T /usr/bin/codesign -T /usr/bin/security || true
+          echo ">>> set partition list for imported keys (allow codesign)"
+          security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASS" "$KEYCHAIN" || true
+          echo ">>> list identities in temp keychain:"
+          security find-identity -v -p codesigning "$KEYCHAIN" || true
       - name: Import Certificate into Keychain
         env:
           P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
