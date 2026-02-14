@@ -2,8 +2,10 @@ name: iOS Release (Flutter)
 
 on:
   push:
-    branches: [ main ]
-    tags: ['release/*']
+    branches:
+      - main
+    tags:
+      - 'release/*'
 
 jobs:
   build-and-upload:
@@ -94,31 +96,24 @@ jobs:
           echo ">>> try import p12 into temp keychain (this may fail with wrong pass)"
           security import ios_distribution.p12 -k "$KEYCHAIN" -P "$P12_PASSWORD" -T /usr/bin/codesign -T /usr/bin/security || true
           echo ">>> set partition list for imported keys (allow codesign)"
-          security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASS" "$KEYCHAIN" || true
+          security set-key-partition-list -S "apple-tool:,apple:" -s -k "$KEYCHAIN_PASS" "$KEYCHAIN" || true
           echo ">>> list identities in temp keychain:"
           security find-identity -v -p codesigning "$KEYCHAIN" || true
 
-      - name: Import Certificate into Keychain
+      - name: Import Certificate into Keychain (build keychain)
         env:
           P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
         run: |
-          # Create and setup a temporary build keychain (empty password)
+          set -e
           KEYCHAIN_NAME="build.keychain"
           security delete-keychain "$KEYCHAIN_NAME" 2>/dev/null || true
           security create-keychain -p "" "$KEYCHAIN_NAME"
           security default-keychain -s "$KEYCHAIN_NAME"
           security unlock-keychain -p "" "$KEYCHAIN_NAME"
-
-          # Import with explicit password handling
-          security import ios_distribution.p12 \
-            -k "$KEYCHAIN_NAME" \
-            -P "$P12_PASSWORD" \
-            -T /usr/bin/codesign \
-            -T /usr/bin/security || true
-
-          # Attempt to set partition list so codesign/Xcode can use the key
-          security set-key-partition-list -S apple-tool:,apple: -s -k "" "$KEYCHAIN_NAME" || true
-
+          echo ">>> importing p12 into $KEYCHAIN_NAME"
+          security import ios_distribution.p12 -k "$KEYCHAIN_NAME" -P "$P12_PASSWORD" -T /usr/bin/codesign -T /usr/bin/security || true
+          echo ">>> try set partition list for $KEYCHAIN_NAME"
+          security set-key-partition-list -S "apple-tool:,apple:" -s -k "" "$KEYCHAIN_NAME" || true
           echo ">>> identities in build keychain:"
           security find-identity -v -p codesigning "$KEYCHAIN_NAME" || true
 
